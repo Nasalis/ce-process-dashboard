@@ -1,3 +1,4 @@
+import { useState } from 'react';
 
 import {
     Row,
@@ -14,6 +15,19 @@ import { ProcessTable } from '../ProcessTable';
 const {InputSearch} = dsgovce();
 
 export function TableArea() {
+    
+    const [search, setSearch] = useState("");
+    const [filter, setFilter] = useState(dataProcess);
+
+    function filterSearch() {
+        const lowerSearchItem = search.toLowerCase();
+    
+        const filteredProcesses = dataProcess.filter(item => {
+          return item.process.toLowerCase().includes(lowerSearchItem)
+        })
+        
+        setFilter(filteredProcesses)
+    }
 
     return (
       <div className={style.tableAreaContainer}>  
@@ -22,11 +36,13 @@ export function TableArea() {
         >
           <div className={style.searchContainer}>
             <InputSearch
-              placeholder="Concatenar com..."
+                value={search}
+                onChange={event => setSearch(event.target.value)}
+                placeholder="Concatenar com..."
             />
-            <GeneralButton text="Filtrar" width="20%"/>
+            <GeneralButton text="Filtrar" width="20%" action={filterSearch}/>
           </div>
-          <ProcessTable processes={dataProcess}/>
+          <ProcessTable processes={filter}/>
         </Col>
 
         <Row>

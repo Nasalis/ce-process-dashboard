@@ -4,10 +4,13 @@ import {
     Col,
 } from 'antd'
 
+import { dataProcess } from '../../utils/dataProcess';
+
 import style from './style.module.scss'
 
 import dsgovce from 'cegov-antd';
 import { GeneralButton } from '../Button';
+import { ProcessTable } from '../ProcessTable';
 const {InputSearch} = dsgovce();
 
 export function TableArea() {
@@ -23,6 +26,7 @@ export function TableArea() {
             />
             <GeneralButton text="Filtrar" width="20%"/>
           </div>
+          <ProcessTable processes={dataProcess}/>
         </Col>
 
         <Row>

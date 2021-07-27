@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import {
-    Row,
-    Col,
+  Row,
+  Col,
 } from 'antd'
 
 import { dataProcess } from '../../utils/dataProcess';
@@ -12,6 +12,7 @@ import style from './style.module.scss'
 import dsgovce from 'cegov-antd';
 import { GeneralButton } from '../Button';
 import { ProcessTable } from '../ProcessTable';
+import { ProcessChart } from '../Chart';
 const {InputSearch} = dsgovce();
 
 export function TableArea() {
@@ -48,6 +49,7 @@ export function TableArea() {
         <Row>
             <GeneralButton text="Gerar dashboard" width="100%"/>
         </Row>
+        <ProcessChart data={dataProcess}/>
       </div>
     );
   }

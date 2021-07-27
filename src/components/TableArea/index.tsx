@@ -13,6 +13,7 @@ import dsgovce from 'cegov-antd';
 import { GeneralButton } from '../Button';
 import { ProcessTable } from '../ProcessTable';
 import { ProcessChart } from '../Chart';
+import { Link } from 'react-router-dom';
 const {InputSearch} = dsgovce();
 
 export function TableArea() {
@@ -47,9 +48,10 @@ export function TableArea() {
         </Col>
 
         <Row>
-            <GeneralButton text="Gerar dashboard" width="100%"/>
+            <Link to={`/chart`}>
+              <GeneralButton text="Gerar dashboard" width="100%"/>
+            </Link>
         </Row>
-        <ProcessChart data={dataProcess}/>
       </div>
     );
   }

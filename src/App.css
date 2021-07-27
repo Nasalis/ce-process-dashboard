@@ -1,1 +1,18 @@
 @import '~cegov-antd/dist/index.css';
+
+.ant-row.container-input-icon {
+    flex-wrap:wrap;
+}
+
+.ant-row-space-between {
+    padding: 1rem;
+}
+
+@media (max-width: 565px) {
+    .ant-row-space-between {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+    }
+}

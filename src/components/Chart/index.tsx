@@ -1,6 +1,8 @@
 import { Column } from '@ant-design/charts';
 import { ProcessProps } from '../../utils/types';
 
+import styles from './style.module.scss'
+
 type dataChartProps = {
     label: string;
     type: string;
@@ -32,9 +34,9 @@ export function ProcessChart({data}: ProcessChartProps) {
     settingDataForChart();
 
     return (
-        <>
+        <div className={styles.chartContainer}>
             <Column 
-                style={{width: '96%'}}
+                style={{width:'96%'}}
                 data={dataChart} 
                 xField="label"
                 yField="value" 
@@ -44,6 +46,6 @@ export function ProcessChart({data}: ProcessChartProps) {
                     radius: [5, 5, 0, 0],
                 }}
             />
-        </>
+        </div>
     )
 };

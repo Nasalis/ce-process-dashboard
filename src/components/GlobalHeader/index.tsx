@@ -25,7 +25,7 @@ export function GlobalHeader() {
             <Col>
                 <Row justify="end" align="middle" >
                 <Col >
-                    <img height={45} width="auto"
+                    <img style={{marginTop: "0.5rem"}} height={45} width="auto" alt="ceara-gov logo"
                     src="https://www.ceara.gov.br/wp-content/themes/ceara2017/assets/images/logo-ceara.svg" />
                 </Col>
                 <Col>
@@ -41,21 +41,12 @@ export function GlobalHeader() {
             <Col>
                 <Row>
                 <Paragraph style={{ textAlign: 'end', color: 'white' }} >
-                    Seja bem-vindo(a)
+                    Seja bem-vindo(a) 
+                    <img style={{marginLeft: '0.5rem', borderRadius: "50%"}} height={50} width={50} alt="user-profile-picture"
+                    src="https://randomuser.me/api/portraits/men/99.jpg" />
                 </Paragraph>
                 </Row>
-                <Row gutter={16} justify="end" align="middle">
-                <Col>
-                    <a style={{ fontSize: '1.2rem', color: "white" }} href="/">
-                        Exemplo
-                    </a>
-                </Col>
-                <Col>
-                    <a style={{ fontSize: '1.2rem', color: "white" }} href="/">
-                        Exemplo
-                    </a>
-                </Col>
-                </Row>
+                <Row gutter={16} justify="end" align="middle"></Row>
             </Col>
             </Row>
         </Header>

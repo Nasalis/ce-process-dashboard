@@ -1,14 +1,14 @@
 ## ce-process-dashboard
 
-Use um gerenciador de pacotes de sua escolha para instalar todas as dependências:
-``` npm install ```  
+Use um gerenciador de pacotes de sua escolha para instalar todas as dependências:  
+``` npm install ```    
 or
-``` yarn install ```
+``` yarn install ```  
 
-Para rodar o projeto, digite o seguindo comando:
-``` npm start ```  
+Para rodar o projeto, digite o seguindo comando:  
+``` npm start ```    
 ou   
-``` yarn start ``` 
+``` yarn start ```   
 
 ### Material
 1. ReactJS

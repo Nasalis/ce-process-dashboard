@@ -1,7 +1,7 @@
 ## ce-process-dashboard
 
 Use um gerenciador de pacotes de sua escolha para instalar todas as dependências:  
-``` npm install ```    
+``` npm install ```      
 or
 ``` yarn install ```  
 

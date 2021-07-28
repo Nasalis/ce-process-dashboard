@@ -2,7 +2,7 @@
 
 Use um gerenciador de pacotes de sua escolha para instalar todas as dependências:  
 ``` npm install ```      
-or
+ou  
 ``` yarn install ```  
 
 Para rodar o projeto, digite o seguindo comando:  
